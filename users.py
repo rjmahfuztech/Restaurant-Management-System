@@ -59,5 +59,8 @@ class Admin(User):
     def add_new_item(self,restaurant,item):
         restaurant.menu.add_menu_item(item)
     
+    def view_items(self,restaurant):
+        restaurant.menu.show_menu_item()
+    
     def remove_item(self,restaurant,item):
         restaurant.menu.remove_item(item)
